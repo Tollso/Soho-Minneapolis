@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-soho {
+    font-family: 'Bodoni Moda', 'Playfair Display', Didot, 'Bodoni MT', 'Cinzel', serif;
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+}

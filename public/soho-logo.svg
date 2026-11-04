@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <!-- ORIGINAL Warm Gold Gradient for Soho Circular Ring -->
+    <linearGradient id="sohoRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1B8" />
+      <stop offset="35%" stop-color="#F6C466" />
+      <stop offset="70%" stop-color="#E5A63B" />
+      <stop offset="100%" stop-color="#F7CD77" />
+    </linearGradient>
+
+    <!-- ORIGINAL Warm Gold Gradient for Typography -->
+    <linearGradient id="sohoTextGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4D0" />
+      <stop offset="45%" stop-color="#FDE397" />
+      <stop offset="85%" stop-color="#F5BF5B" />
+      <stop offset="100%" stop-color="#EAA738" />
+    </linearGradient>
+
+    <!-- 3D Pop-Out Filter: Top Bevel + Deep Underneath Drop Shadow (No Ring Filter) -->
+    <filter id="sohoPopOut" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="-1.5" stdDeviation="0.5" floodColor="#FFFFFF" floodOpacity="0.6" />
+      <feDropShadow dx="0" dy="4" stdDeviation="1.8" floodColor="#000000" floodOpacity="0.95" />
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&amp;family=Bebas+Neue&amp;family=Montserrat:wght@500;600&amp;display=swap');
+
+    .soho-brand-title {
+      font-family: 'Antonio', 'Bebas Neue', 'Alternate Gothic', 'Arial Narrow', sans-serif;
+      font-weight: 700;
+      letter-spacing: 6px;
+      text-anchor: middle;
+      fill: url(#sohoTextGrad);
+      filter: url(#sohoPopOut);
+    }
+
+    .soho-brand-subtitle {
+      font-family: 'Montserrat', 'Antonio', sans-serif;
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 6.5px;
+      text-anchor: middle;
+      fill: #FCE7A1;
+      filter: url(#sohoPopOut);
+    }
+  </style>
+
+  <!-- Clean Soho Circular Ring (Strictly the Soho Circle - No Filter, No Frame) -->
+  <circle
+    cx="150"
+    cy="150"
+    r="132"
+    fill="#070709"
+    stroke="url(#sohoRingGrad)"
+    stroke-width="2.2"
+  />
+
+  <!-- 3D Words: "SO" over "HO" with Multi-layered Extrusion Popping Out -->
+  <g>
+    <!-- SO 3D Side Facets (Popping Out) -->
+    <text x="153" y="134.5" font-size="94" font-family="'Antonio', 'Bebas Neue', sans-serif" font-weight="700" letter-spacing="6px" text-anchor="middle" fill="#5E3C06">SO</text>
+    <text x="153" y="133.2" font-size="94" font-family="'Antonio', 'Bebas Neue', sans-serif" font-weight="700" letter-spacing="6px" text-anchor="middle" fill="#A87319">SO</text>
+    <!-- SO Raised Front Face -->
+    <text x="153" y="132" font-size="94" class="soho-brand-title">SO</text>
+
+    <!-- HO 3D Side Facets (Popping Out) -->
+    <text x="153" y="220.5" font-size="94" font-family="'Antonio', 'Bebas Neue', sans-serif" font-weight="700" letter-spacing="6px" text-anchor="middle" fill="#5E3C06">HO</text>
+    <text x="153" y="219.2" font-size="94" font-family="'Antonio', 'Bebas Neue', sans-serif" font-weight="700" letter-spacing="6px" text-anchor="middle" fill="#A87319">HO</text>
+    <!-- HO Raised Front Face -->
+    <text x="153" y="218" font-size="94" class="soho-brand-title">HO</text>
+  </g>
+
+  <!-- Subtitle: — LOUNGE — 3D Popping Out -->
+  <g>
+    <!-- Left Divider Line -->
+    <line x1="74" y1="237" x2="98" y2="237" stroke="#F6C466" stroke-width="1.5" stroke-linecap="round" filter="url(#sohoPopOut)" />
+
+    <!-- LOUNGE Side Shadow -->
+    <text x="153" y="242.2" font-family="'Montserrat', 'Antonio', sans-serif" font-size="11.5px" font-weight="600" letter-spacing="6.5px" text-anchor="middle" fill="#6E4407">LOUNGE</text>
+    <!-- LOUNGE Front Face -->
+    <text x="153" y="241" class="soho-brand-subtitle">LOUNGE</text>
+
+    <!-- Right Divider Line -->
+    <line x1="202" y1="237" x2="226" y2="237" stroke="#F6C466" stroke-width="1.5" stroke-linecap="round" filter="url(#sohoPopOut)" />
+  </g>
+</svg>

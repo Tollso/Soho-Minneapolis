@@ -1,0 +1,6 @@
+{
+  "name": "Soho Lounge - Minneapolis",
+  "description": "High-end nightlife & VIP lounge experience at 923 Nicollet Mall, Minneapolis. Features table & bottle service reservations, VIP card membership, section floorplans, and digital portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
