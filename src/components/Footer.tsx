@@ -1,5 +1,5 @@
 import React from 'react';
-import { Crown, MapPin, Sparkles, Shield, CreditCard } from 'lucide-react';
+import { Crown, MapPin, Sparkles, Shield, CreditCard, Lock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { GoldSohoLogo } from './common/GoldSohoLogo';
 
